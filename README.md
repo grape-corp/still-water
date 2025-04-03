@@ -6,7 +6,7 @@ a collection of static sites in the grape-corp ecosystem.
 
 🚬 a basic site maintenance page with some flair. 
 
-![image](/out-for-a-smoke/doggo-smoking.gif)
+![image](/out-for-a-smoke/assets/doggo-smoking.gif)
 
 ## upload-form
 
