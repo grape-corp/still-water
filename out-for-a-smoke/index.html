@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>out for a smoke</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+            color: white;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="smooth-jazz.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <img src="doggo-smoking.gif" alt="a doggo smoking a cigaratte">
+        <p>sorry, we're out for a smoke. be back shortly...</p>
+        <button id="mute-btn">mute</button>
+    </div>
+    <script>
+        const audio = document.getElementById("bg-music");
+        const button = document.getElementById("mute-btn");
+        
+        button.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "mute";
+            } else {
+                audio.pause();
+                button.textContent = "unmute";
+            }
+        });
+    </script>
+</body>
+</html>
