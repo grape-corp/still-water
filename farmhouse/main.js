@@ -15,7 +15,7 @@ const dropdownBtn = document.getElementById("dropdown-btn");
 const audioSource = audio.querySelector("source").src;
 const audioName = audioSource.substring(audioSource.lastIndexOf("/") + 1).replace(".mp3", "")
 const audioSources = {
-    "html": "assets/sounds/HTMLsong.mp3",
+    "html": "assets/sounds/HTMLSong.mp3",
     "moda": "assets/sounds/moda-crime-daughter.mp3",
 }
 const trackButtons = document.querySelectorAll(".track-btn");
