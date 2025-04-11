@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grape.wtf</title>
+    <link rel="icon" type="image/png" href="assets/grape-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/grape-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="assets/grape-180x180.png">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div id="header-left">
+            <img id="disc-icon" src="assets/widget-icons/disk2.png" alt="disk icon">
+            <button id="play-btn">play</button>
+            <button id="pause-btn">pause</button>
+            <div class="marquee">
+                <div class="marquee-item">
+                    <p id="now-playing">no music is playing</p>
+                </div>
+                <div class="marquee-item">
+                    <p id="now-playing2">no music is playing</p>
+                </div>
+            </div>
+            <button id="dropdown-btn">\/</button>
+        </div>
+        <div id="header-right">
+            <a href="https://www.wyattlovesgrapes.com/widgets/tertiary/recycle/oops.html" title="pixel icons">definitely don't click here</a>
+        </div>
+    </header>
+
+    <!--music-player-dropdown-menu-->
+    <section id="dropdown-music-player">
+        <audio id="bg-music" loop>
+            <source src="assets/sounds/HTMLsong.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="dropdown-item">
+            <button class="track-btn" id="html">html song</button>
+            <p>by: after new order</p>
+            <a href="http://afterneworder.com/htmlsong/orderthesong.html">link</a>
+        </div>
+        <div class="dropdown-item">
+            <button class="track-btn" id="moda">moda</button>
+            <p>by: crime daughter</p>
+            <a href="https://crimedaughter.bandcamp.com/album/never-be-a-pawn-always-be-a-child">link</a>
+        </div>
+    </section>
+
+    <!--content-->
+    <section id="content">
+        <img id="content-logo" src="assets/grape-512x512.png" alt="the grape corporation logo 192x192 pixels">
+        <div id="content-title-container">
+            <h1>the grape corporation</h1>
+            <p id="content-description">definitely a real company...</p>
+        </div>
+
+        <!--icon-bar-->
+        <div id="icon-bar">
+            <div id="grapevine" class="icon">
+                <img src="assets/widget-icons/chicken.png" alt="grapevine icon">
+                <p class="icon-title">grapevine</p>
+            </div>
+            <div id="turntable-wizard" class="icon double-line">
+                <img src="assets/widget-icons/crown.png" alt="grapevine icon">
+                <p class="icon-title">turntable wizard</p>
+            </div>
+            <div id="roadmap" class="icon">
+                <img src="assets/widget-icons/roadmap.png" alt="grapevine icon">
+                <p class="icon-title">roadmap</p>
+            </div>
+            <div id="about" class="icon">
+                <img src="assets/widget-icons/numb.png" alt="grapevine icon">
+                <p class="icon-title">about</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div id="footer-right">
+            <a href="/pages/credits.html">credits</a>
+            <p>|</p>
+            <p>made in california by <a href="https://www.grape.wtf/">grape.wtf</a></p>
+        </div>
+        <div id="footer-left">
+            <img id="footer-grape-logo" src="assets/grape-32x32.png" alt="the grape corporation logo">
+            <p>the grape corporation</p>
+        </div>
+    </footer>
+
+    <!--script-->
+    <script src="main.js"></script>
+</body>
+</html>
